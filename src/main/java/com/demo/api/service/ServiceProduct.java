@@ -1,9 +1,14 @@
 package com.demo.api.service;
 
-import com.demo.api.entity.Category;
-import com.demo.api.entity.Product;
+import java.util.List;
+
+import com.demo.api.dto.ProductDto;
 
 public interface ServiceProduct {
 
-	public Product findProduct(Category cat);
+	public List<ProductDto> findByCategoryAndByStockGreaterThan(Long codeCat, int nbre);
+
+	public ProductDto save(ProductDto productDto);
+
+	public List<ProductDto> saveAll(List<ProductDto> productsDto);
 }

@@ -1,11 +1,7 @@
-package com.demo.api.entity;
+package com.demo.api.dto;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonProperty;
+
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
@@ -14,12 +10,10 @@ import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
-@Entity
-@Table
 @Data @AllArgsConstructor @NoArgsConstructor @Builder
-public class Product {
+public class ProductDto {
 
-	@Id @GeneratedValue(strategy = GenerationType.IDENTITY)
+	
 	private Long id;
 	
 	@NotBlank
@@ -31,9 +25,8 @@ public class Product {
 	private String marque;
 	
 	@Min(value = 0L, message = "The value must be positive")
-	private Integer stock;
+	private Integer stock; 
 	
-	
-	@ManyToOne
-	private Category category;
+	@JsonProperty("category")
+	private CategoryDto categoryDto;
 }

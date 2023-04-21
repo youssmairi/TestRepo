@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "name": "chaussure",
+        "marque": "ADIDAS",
+        "stock": 15,
+        "category": {
+            "code": 1,
+            "name": "SPORT"
+        }
+    },
+    {
+        "id": 2,
+        "name": "ballon de football",
+        "marque": "NIKE",
+        "stock": 9,
+        "category": {
+            "code": 1,
+            "name": "SPORT"
+        }
+    },
+    {
+        "id": 3,
+        "name": "raquette de tinis",
+        "marque": "reebok",
+        "stock": 0,
+        "category": {
+            "code": 1,
+            "name": "SPORT"
+        }
+    },
+    {
+        "id": 4,
+        "name": "machine a laver",
+        "marque": "BOSH",
+        "stock": 11,
+        "category": {
+            "code": 2,
+            "name": "ELECTROMENAGER"
+        }
+    },
+    {
+        "id": 5,
+        "name": "aspirateur",
+        "marque": "LG",
+        "stock": 9,
+        "category": {
+            "code": 2,
+            "name": "ELECTROMENAGER"
+        }
+    },
+    {
+        "id": 6,
+        "name": "televiseur",
+        "marque": "LG",
+        "stock": 0,
+        "category": {
+            "code": 2,
+            "name": "ELECTROMENAGER"
+        }
+    },
+    {
+        "id": 7,
+        "name": "Boisson Iced Tea saveur pêche",
+        "marque": "carrefour",
+        "stock": 55,
+        "category": {
+            "code": 3,
+            "name": "BOISSON"
+        }
+    },
+    {
+        "id": 8,
+        "name": "Jus d'ananas 100% pur jus",
+        "marque": "carrefour",
+        "stock": 9,
+        "category": {
+            "code": 3,
+            "name": "BOISSON"
+        }
+    },
+    {
+        "id": 9,
+        "name": "machine a laver",
+        "marque": "carrefour",
+        "stock": 0,
+        "category": {
+            "code": 3,
+            "name": "BOISSON"
+        }
+    }
+]
