@@ -1,6 +1,7 @@
 package com.demo.api.dto;
 
 
+import jakarta.validation.Valid;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Size;
 import lombok.AllArgsConstructor;
@@ -12,11 +13,12 @@ import lombok.NoArgsConstructor;
 public class CategoryDto {
 
 	
-	private Long code;
+	private @Valid Long code;
 	
 	@NotBlank
 	@Size(max = 30)
 	private String name ;
 
-	private String description;
+	
+	private @Valid String description;
 }
